@@ -56,7 +56,7 @@
 		<source type="audio/mp3" src="love.mp3">
 	</audio>
 
-	<audio id="audio3" preload loop>
+	<audio id="audio2" preload loop>
 		<source type="audio/mp3" src="love2.mp3">
 	</audio>
 
@@ -180,22 +180,18 @@
 	</div>
 
 	<script type="text/javascript">
-		var audio1 = document.getElementById("audio1"), audio2 = document.getElementById("audio2"), audio3 = document.getElementById("audio3");
+		var audio1 = document.getElementById("audio1"), audio2 = document.getElementById("audio2");
 
 		var button = document.getElementById("pp");
 		var range = document.getElementById("value");
 
 		switch(getRandomInt(1, 3)) {
 			case 1:
-				var audio = audio3;
+				var audio = audio2;
 				audio.play();
 				break;
 			case 2:
 				var audio = audio1;
-				audio.play();
-				break;
-			case 3:
-				var audio = audio3;
 				audio.play();
 				break;
 			default:
